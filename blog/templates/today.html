@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>today</title>
+
+    </head>
+
+    <body>
+
+        <h1>{{title}}</h1>
+        <p>{{time}}</p>
+        <script>
+            navigator.geolocation.getCurrentPosition(success, error);
+
+            function success(position) {
+                alert(position)
+            }
+            function error(position) {
+                alert('Error')
+            }
+        </script>
+
+        <h1>what do you want to remember?</h1>
+        <form> 
+        <input>
+
+        <h2>appendix</h2>
+        <input type="file" id="myFile" name="filename">
+        <p>sound of the day</p><input>
+        <p>vibe/emotion wheel</p>
+        <label>tags</label>
+        <input list="tags">
+        <datalist id="tags">
+          <option value="big">
+          <option value="long">
+          <option value="chill">
+        </datalist>
+        <br>
+        <input type="submit">
+        </form>
+
+    </body>
+
+</html>
