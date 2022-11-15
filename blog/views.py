@@ -19,14 +19,14 @@ def TodayView(request):
     title = str()
 
     if current_day.day > 3:
-        title = A+'th ' + B
+        title = A +'th ' + B
     else:
         if current_day.day == 1:
-            title = A+ 'st ' + B
+            title = A + 'st ' + B
         if current_day.day == 2:
-            title = A+ 'nd ' + B
+            title = A + 'nd ' + B
         if current_day.day == 3:
-            title = A+ 'rd ' + B
+            title = A + 'rd ' + B
 
     context = {'title': title, 'time': time}
 
